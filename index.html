@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Công cụ Chuyển đổi và So sánh ảnh</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1> Công cụ Chuyển đổi và So sánh ảnh</h1>
+        <p class="subtitle">Tối ưu dung lượng • So sánh realtime • WebP/JPEG/PNG</p>
+        
+        <div class="upload-section">
+            <input type="file" id="uploadInput" accept="image/*" hidden>
+            <label for="uploadInput" class="btn-upload" tabindex="0">
+                📁 Chọn ảnh (JPG/PNG/WebP...)
+            </label>
+            <div class="upload-hint">Tối đa 10MB • Xử lý <strong>tức thì</strong></div>
+        </div>
+
+        <div class="controls" id="controls" style="display: none;">
+            <div class="control-group">
+                <label> Định dạng:</label>
+                <select id="formatSelect">
+                    <option value="image/webp">WebP  (Nhanh nhất)</option>
+                    <option value="image/jpeg">JPEG 📸</option>
+                    <option value="image/png">PNG 🖼️</option>
+                </select>
+            </div>
+            
+            <div class="control-group">
+                <label> Quality: <span id="qualityValue">80</span>%</label>
+                <input type="range" id="qualityRange" min="1" max="100" value="80">
+            </div>
+
+            <button id="convertBtn" class="btn-convert">
+                 Convert & So sánh
+            </button>
+        </div>
+
+        <div class="comparison-area" id="comparisonArea" style="display: none;">
+            <div class="card">
+                <h3>📷 Ảnh Gốc</h3>
+                <div class="img-wrapper">
+                    <img id="originalPreview" alt="Original">
+                </div>
+                <div class="info-table-container">
+                    <table class="info-table">
+                        <tr><td>Định dạng</td><td id="orig-format">-</td></tr>
+                        <tr><td>Dung lượng</td><td id="orig-size">-</td></tr>
+                        <tr><td>Độ phân giải</td><td id="orig-res">-</td></tr>
+                        <tr><td>Trong suốt</td><td id="orig-trans">-</td></tr>
+                    </table>
+                </div>
+            </div>
+
+            <div class="card">
+                <h3>✨ Sau chuyển đổi</h3>
+                <div class="img-wrapper">
+                    <img id="convertedPreview" alt="Converted">
+                </div>
+                <div class="info-table-container">
+                    <table class="info-table">
+                        <tr><td>Định dạng</td><td id="conv-format">-</td></tr>
+                        <tr><td>Dung lượng</td><td id="conv-size">-</td></tr>
+                        <tr><td>Độ phân giải</td><td id="conv-res">-</td></tr>
+                        <tr><td>Chất lượng</td><td id="conv-quality">-</td></tr>
+                        <tr><td>Trong suốt</td><td id="conv-trans">-</td></tr>
+                        <tr class="highlight-row"><td>🎯 Tiết kiệm</td><td id="conv-saving">-</td></tr>
+                        <tr><td>⏱️ Thời gian</td><td id="conv-time">-</td></tr>
+                    </table>
+                </div>
+                <a id="downloadLink" class="btn-download" style="display: none;">Tải xuống</a>
+            </div>
+        </div>
+
+        <div class="loading-overlay" id="loadingOverlay" style="display: none;">
+            <div class="loading-spinner"></div>
+            <p>Đang tiến hành...</p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
