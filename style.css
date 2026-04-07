@@ -6,7 +6,7 @@ body {
     min-height: 100vh;
     padding: 20px;
     line-height: 1.6;
-    font-size: 16px; /* giảm từ 22px */
+    font-size: 16px; 
 }
 
 .container {
@@ -14,7 +14,7 @@ body {
     margin: 0 auto;
     background: rgba(255, 255, 255, 0.98);
     backdrop-filter: blur(20px);
-    padding: 30px; /* giảm từ 60px */
+    padding: 30px; 
     border-radius: 40px;
     box-shadow: 0 25px 80px rgba(0, 0, 0, 0.15);
 }
@@ -31,7 +31,7 @@ h1 {
 }
 
 .subtitle {
-    font-size: 1.3rem; /* giảm từ 3rem */
+    font-size: 1.3rem; 
     text-align: center;
     color: #475569;
     margin: 0 auto 2rem auto;
@@ -49,11 +49,11 @@ h1 {
     align-items: center;
     justify-content: center;
     gap: 1rem;
-    padding: 1rem 2.5rem; /* giảm */
+    padding: 1rem 2.5rem; 
     background: linear-gradient(135deg, #667eea 0%, #356091 100%);
     color: white;
     border-radius: 6rem; 
-    font-size: 1.2rem;   /* giảm từ 2.5rem */
+    font-size: 1.2rem;   
     font-weight: 900;    
     cursor: pointer;
     box-shadow: 0 15px 35px rgba(102, 126, 234, 0.4);
@@ -63,7 +63,7 @@ h1 {
 .upload-hint {
     margin-top: 15px;
     color: #64748b;
-    font-size: 1rem; /* giảm */
+    font-size: 1rem; 
     font-weight: 600;
 }
 
@@ -87,13 +87,13 @@ h1 {
 
 .control-group label {
     font-weight: 700;
-    font-size: 1rem; /* giảm từ 3rem */
+    font-size: 1rem; 
     color: #1e293b;
 }
 
 .control-group select {
     padding: 0.8rem;
-    font-size: 1rem; /* giảm */
+    font-size: 1rem; 
     border-radius: 10px;
     border: 2px solid #cbd5e0;
     font-weight: 700;
@@ -122,12 +122,12 @@ h1 {
 }
 
 .img-wrapper {
-    height: 400px; /* giảm từ 750px */
+    height: 400px; 
 }
 
 .info-table td {
     padding: 10px;
-    font-size: 1rem; /* giảm từ 3rem */
+    font-size: 1rem; 
 }
 
 .btn-download {
