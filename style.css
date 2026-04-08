@@ -20,7 +20,7 @@ body {
 }
 
 h1 {
-    font-size: clamp(2.2rem, 5vw, 3.2rem); /* giảm */
+    font-size: clamp(2.2rem, 5vw, 3.2rem); 
     text-align: center;
     margin-bottom: 1.5rem;
     background: linear-gradient(135deg, #667eea 0%, #356091 100%);
